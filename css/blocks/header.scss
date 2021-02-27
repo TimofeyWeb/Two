@@ -1,0 +1,21 @@
+//main ../style.scss
+
+.header {
+  margin-top: 6rem;
+  margin-bottom: 7rem;
+}
+
+.header__title {
+  font-size: 4.2rem;
+  color: #242424;
+  font-weight: 700;
+  padding-bottom: 4.9rem;
+}
+
+.header__location_prev, .header__location_next {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #242424;
+  font-weight: 400;
+  font-style: italic;
+}

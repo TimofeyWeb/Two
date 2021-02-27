@@ -1,0 +1,127 @@
+//main ../style.scss
+
+.wards {
+  padding-bottom: 10rem;
+}
+
+.wards__item {
+  border: 1px solid #FFFFFF;
+  border-radius: 0.8rem;
+  box-shadow: 0px 2px 16px rgba(#000000, 0.08);
+  padding-top: 2rem;
+  margin-bottom: 1.6rem;
+
+  transition: box-shadow 0.2s linear;
+
+  &:hover {
+    box-shadow: 0px 2px 16px rgba(#000000, 0.24);;
+  }
+}
+
+.wards__head {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-self: center;
+  padding: 0rem 2rem 2rem 2rem;
+  border-bottom: 1px solid rgba(#000000, 0.16);
+}
+
+.wards__wrapper {
+  @media (max-width: 689px) {
+  width: 30rem;
+  }
+}
+
+.wards__photo {
+  width: 11.2rem;
+  height: 11.2rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.7rem;
+  float: left;
+}
+
+.wards__photo_img {
+  min-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.wards__name {
+  margin: 2.4rem auto 2.4rem 13.2rem;
+  font-size: 2.4rem;
+  color: #242424;
+  font-weight: 700;
+}
+
+.wards__read {
+
+}
+
+.wards__text {
+  margin-left: 2.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #242424;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.wards__arrow {
+  display: inline-block;
+  padding-left: 0.4rem;
+  height: 0.8rem;
+}
+
+.wards__btn {
+  height: 4.4rem;
+  margin: 3.4rem 0rem;
+  padding: 0rem 2rem;
+  border-radius: 0.4em;
+  border: none;
+  background: #DBA072;
+  cursor: pointer;
+
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+
+  transition: border-color .2s linear, background-color .2s linear, color .2s linear, box-shadow 0.2s linear;
+
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: rgb(248,162,90);
+    color: #2B2A2C;
+    box-shadow: 2px 2px 10px fade(#000, 24%);
+    border: 1px solid #2B2A2C;
+  }
+
+  @media (max-width: 539px) {
+    width: 100%;
+    }
+}
+
+.wards__story {
+  margin: 4rem 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  color: #242424;
+  font-weight: 400;
+  line-height: 2.8rem;
+  & p:first-child {
+    padding-bottom: 2.8rem;
+  }
+}
